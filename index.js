@@ -37,6 +37,9 @@ function formatDate(date) {
 console.log(formatDate("2021-22-09"));
 
 // 5. Написати функцію, яка приймає два рядки, написані у різному регістрі та порівнює їх незалежно від регістру.
-// isEqual(‘pApA’, ‘papa’)  //true
-// isEqual(‘qwerty’, ‘QWErty’)  //true
-// isEqual(‘aaa’, ‘EEE’) //false
+function isEqual(string1, string2) {
+  return string1.toLowerCase() === string2.toLowerCase();
+}
+console.log(isEqual("pApA", "papa"));
+console.log(isEqual("qwerty", "QWErty"));
+console.log(isEqual("aaa", "EEE"));
