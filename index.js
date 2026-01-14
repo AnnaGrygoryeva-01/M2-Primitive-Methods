@@ -7,6 +7,9 @@
 // 4. Написати функцію, яка приймає рядок тексту з датою у форматі “2021-22-09” і повертає її у вигляді “22.09.2021”
 
 // 5. Написати функцію, яка приймає два рядки, написані у різному регістрі та порівнює їх незалежно від регістру.
-// isEqual(‘pApA’, ‘papa’)  //true
-// isEqual(‘qwerty’, ‘QWErty’)  //true
-// isEqual(‘aaa’, ‘EEE’) //false
+function isEqual(string1, string2) {
+  return string1.toLowerCase() === string2.toLowerCase();
+}
+console.log(isEqual("pApA", "papa"));
+console.log(isEqual("qwerty", "QWErty"));
+console.log(isEqual("aaa", "EEE"));
