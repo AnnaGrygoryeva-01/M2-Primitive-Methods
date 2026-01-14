@@ -1,4 +1,10 @@
 // 1. Даний рядок тексту. Вивести його задом наперед
+const someText = "Даний рядок тексту. Вивести його задом наперед";
+const reversedText = someText.split("").toReversed().join("");
+console.log(reversedText);
+// or
+// const result = someText.split("").reverse().join("");
+// console.log(result);
 
 // 2. Написати функцію, яка приймає число з дрібною частиною і повертає тільки цілу частину
 
