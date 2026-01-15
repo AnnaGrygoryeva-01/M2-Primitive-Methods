@@ -7,10 +7,15 @@ console.log(reversedText);
 // console.log(result);
 
 // 2. Написати функцію, яка приймає число з дрібною частиною і повертає тільки цілу частину
+// function decimalpoint(number) {
+//   return Math.trunc(number);
+// }
+// console.log(decimalpoint(3.5643));
+// or
 function decimalpoint(number) {
-  return Math.trunc(number);
+  return Number(number.toString().split(".")[0]);
 }
-console.log(decimalpoint(3.5643));
+console.log(decimalpoint(31.863));
 
 // 3. Прийняти від користувача (за допомогою prompt) його ім’я і вивести його у модальне вікно великими літерами (‘alex’ -> ‘ALEX’)
 const userName = prompt("What is your name?");
